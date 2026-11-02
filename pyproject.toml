@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-skill-md"
+version = "0.1.0"
+description = "Zero-dependency SKILL.md parser, validator, and quality scorer for agent skill catalogs."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Hussain Al-Saibai", email = "hussain.alsaibai@gmail.com"}]
+keywords = ["skill", "agent", "markdown", "yaml", "frontmatter", "tiny"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hussain-alsaibai/tiny-skill-md"
+Repository = "https://github.com/hussain-alsaibai/tiny-skill-md"
+Issues = "https://github.com/hussain-alsaibai/tiny-skill-md/issues"
+
+[tool.setuptools]
+py-modules = ["tiny_skill_md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
